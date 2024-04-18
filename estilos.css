@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* Color de fondo blanco */
+}
+
+header {
+    background-color: #3b5998; /* Color azul corporativo */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 120px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    float: left; /* Coloca el logo a la izquierda */
+    margin-right: 20px; /* Espacio entre el logo y el título */
+}
+h2 {
+    text-align: center; /* Centra todos los títulos h2 */
+}
+h3 {
+    text-align: center; /* Centra todos los títulos h2 */
+}
+.titulo {
+    margin-top: 0; /* Elimina el margen superior predeterminado del título */
+    margin-left: 10px; /* Espacio entre el logo y el título */
+}
+
+nav {
+    background-color: #3b5998; /* Color de fondo del menú */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the horizontal navigation menu */
+nav ul li {
+    display: inline-block;
+}
+
+/* Style the links in the navigation menu */
+nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #ece6e6f8; /* Color del texto */
+}
+
+/* Style the dropdown button */
+.dropdown .dropbtn {
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9; /* Color de fondo */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Sombra */
+}
+
+/* Style the links inside the dropdown content */
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #0a0a0ae7; /* Color del texto */
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd; /* Color de fondo al pasar el ratón */
+}
+
+.carrusel {
+    max-width: 600px; /* Ancho máximo del carrusel */
+    margin: 0 auto; /* Centra horizontalmente */
+    overflow: hidden; /* Oculta las imágenes que exceden el tamaño del contenedor */
+}
+
+.slides {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slides img {
+    width: 100%; /* Ajusta el ancho de las imágenes al 100% del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    object-fit: cover; /* Escala la imagen para cubrir el contenedor */
+}
+
+
+.quienes-somos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.quienes-somos .contenido {
+    flex: 1;
+    text-align: justify; /* Alinea el texto justificado */
+}
+
+.quienes-somos h2,
+.quienes-somos h2,
+.quienes-somos strong {
+    color: #007bff; /* Azul corporativo */
+}
+
+.quienes-somos .imagen img {
+    max-width: 600px; /* Ancho máximo de la imagen */
+    height: auto;
+    margin-left: 20px; /* Ajusta el margen entre la imagen y el texto */
+}
+
+
+footer {
+    background-color: #3b5998; /* Color azul corporativo */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.redes-sociales a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.redes-sociales a:hover {
+    text-decoration: underline;
+}
+.mission-content {
+    text-align: center; /* Centra horizontalmente el contenido */
+}
+
+/* Estilo para alinear la imagen junto al texto */
+.mission-details {
+    display: inline-block;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center;
+    text-align: center; /* Justifica el texto */
+}
+
+.mission-details img {
+    margin-left: 20px; /* Espacio entre el texto y la imagen */
+    max-width: 300px; /* Ancho máximo de la imagen */
+}
+.vision-content {
+    text-align: center; /* Centra horizontalmente el contenido */
+}
+
+/* Estilo para alinear la imagen junto al texto */
+.vision-details {
+    display: inline-block;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center;
+    text-align: center; /* Justifica el texto */
+}
+
+.vision-details img {
+    margin-left: 20px; /* Espacio entre el texto y la imagen */
+    max-width: 300px; /* Ancho máximo de la imagen */
+}
+
+/* Estilo para alinear la imagen junto al texto */
+.valores-details {
+    display: inline-block;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center;
+    text-align: justify; /* Justifica el texto */
+}
+.valores-content {
+    text-align: center; /* Centra horizontalmente el contenido */
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    margin: 10px;
+}
+
+.team-member-image {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+}

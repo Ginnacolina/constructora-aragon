@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viviendas</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Viviendas</h1>
+    </header>
+    <section class="carruseles">
+        <div class="carrusel">
+            <!-- Carrusel 1 -->
+            <div class="slides">
+                <img src="casa1.jpg" alt="Vivienda 1">
+                <img src="casa12.jpg" alt="Vivienda 1">
+                <img src="casa13.jpg" alt="Vivienda 1">
+                <img src="casa14.jpg" alt="Vivienda 1">
+                <img src="casa15.jpg" alt="Vivienda 1">
+                <!-- Más imágenes... -->
+            </div>
+        </div>
+        <div class="carrusel">
+            <!-- Carrusel 2 -->
+            <div class="slides">
+                <img src="vivienda2.jpg" alt="Vivienda 2">
+                <!-- Más imágenes... -->
+            </div>
+        </div>
+        <!-- Más carruseles... -->
+    </section>
+    <footer>
+        <!-- Pie de página -->
+    </footer>
+    <script src="viviendas.js"></script>
+</body>
+</html>

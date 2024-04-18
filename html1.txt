@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructora Aragón</title>
+    <style>
+        /* Estilos CSS aquí */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; /* Blanco */
+            color: #000000; /* Negro */
+        }
+
+        header {
+            background-color: #1a73e8; /* Azul corporativo */
+            color: #ffffff; /* Blanco */
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #0d47a1; /* Azul más oscuro */
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #ffffff; /* Blanco */
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #1a73e8; /* Azul corporativo */
+            color: #ffffff; /* Blanco */
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        .redes-sociales {
+            margin-top: 20px;
+        }
+
+        .redes-sociales a {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: #ffffff; /* Blanco */
+            color: #1a73e8; /* Azul corporativo */
+            text-align: center;
+            line-height: 30px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            text-decoration: none;
+        }
+
+        .quienes-somos {
+            background-color: #f5f5f5; /* Gris claro */
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .video {
+            margin-top: 20px;
+        }
+
+        .gallery {
+            text-align: center;
+        }
+
+        .gallery img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Constructora Aragón</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#informacion-empresa">Información de la Empresa</a></li>
+            <li><a href="#portafolio-proyectos">Portafolio de Proyectos</a></li>
+            <li><a href="#cotizaciones">Cotizaciones</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#intranet">Intranet</a></li>
+            <li><a href="#chat-en-vivo">Chat en Vivo</a></li>
+        </ul>
+    </nav>
+    <section class="gallery">
+        <img src="imagen1.jpg" alt="Imagen 1">
+        <img src="imagen2.jpg" alt="Imagen 2">
+        <img src="imagen3.jpg" alt="Imagen 3">
+        <img src="imagen4.jpg" alt="Imagen 4">
+        <img src="imagen5.jpg" alt="Imagen 5">
+    </section>
+    <section id="quienes-somos" class="quienes-somos">
+        <h2>¿Quiénes Somos?</h2>
+        <p>Somos una empresa dedicada a atender necesidades de desarrollo de infraestructura, constituida por ingenieros con alta especialización en los sectores energético, siderúrgico, minero, automotriz, edificación, entre otros, con el objetivo principal de optimizar los recursos de nuestros clientes, aportando y sumando innovación en cada uno de sus proyectos.</p>
+        <p><strong>¿Por Qué constructora Aragon Debe Ser Tu Opción #1?</strong></p>
+        <p>Proveemos soluciones estratégicas. Nos adaptamos 100% a cada proyecto, generando un servicio de máxima calidad con asistencia personalizada en todo momento.</p>
+        <div class="video">
+            <!-- Agrega aquí tu video -->
+        </div>
+    </section>
+    <footer>
+        <div class="redes-sociales">
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">Twitter</a>
+            <a href="#" target="_blank">Instagram</a>
+        </div>
+        <p><strong>Política de privacidad</strong> | <strong>Política de cookies</strong> | <strong>Aviso Legal</strong></p>
+        <p><strong>Contáctanos</strong></p>
+        <p><strong>Corporativo:</strong> Av caracas No Interior 503, Bogota D.C, administracion@constaragon.com.co</p>
+        <p><strong>Oficinas:</strong></p>
+        <p>Bogota - Av. Caracas No 76 - 08, Barrio Unilago</p>
+        <p>Medellín - Av. Las Palmas No 18-23, Santa Helena Antioquia</p>
+    </footer>
+    <script>
+        // Script para cambiar las imágenes de la galería
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.gallery img');
+
+        function showNextImage() {
+            images[currentIndex].style.display = 'none';
+            currentIndex = (currentIndex + 1) % images.length;
+            images[currentIndex].style.display = 'block';
+            setTimeout(showNextImage, 5000); // Cambiar de imagen cada 5 segundos
+        }
+
+        showNextImage(); // Iniciar el ciclo de imágenes
+    </script>
+</body>
+</html>
